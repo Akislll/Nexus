@@ -16,7 +16,7 @@ export function Login() {
   const { login } = useAuthentication();
   const location = useLocation();
   const navigate = useNavigate();
-  const { isOauthInProgress, oauthError, startOauth } = useOauth("login");
+  const { isOauthInProgress } = useOauth("login");
   usePageTitle("Sign in");
 
   const doLogin = async (e: FormEvent<HTMLFormElement>) => {
