@@ -1,4 +1,4 @@
-<img src = "./screenshot.png"/>
+
 
 ## Running the project on your machine
 
@@ -37,19 +37,6 @@ gradlew.bat build -t -x test
 
 Configure environment variables for OAuth 2.0 and OIDC, aka the Continue with Google button. Skip if you do not want to test this feature:
 
-_Mac/Linux:_
-
-```
-export OAUTH_GOOGLE_CLIENT_ID=your_google_client_id
-export OAUTH_GOOGLE_CLIENT_SECRET=your_google_client_secret
-```
-
-_Windows:_
-
-```
-set OAUTH_GOOGLE_CLIENT_ID=your_google_client_id
-set OAUTH_GOOGLE_CLIENT_SECRET=your_google_client_secret
-```
 
 Run the backend:
 
