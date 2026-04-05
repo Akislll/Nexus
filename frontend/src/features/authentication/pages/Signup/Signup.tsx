@@ -15,7 +15,7 @@ export function Signup() {
   const [isLoading, setIsLoading] = useState(false);
   const { signup } = useAuthentication();
   const navigate = useNavigate();
-  const { isOauthInProgress, oauthError, startOauth } = useOauth("signup");
+  const { isOauthInProgress} = useOauth("signup");
 
   usePageTitle("Sign up");
 
