@@ -1,0 +1,9 @@
+.root {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.container {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1.25rem auto 2rem;
+}

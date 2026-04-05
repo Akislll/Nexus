@@ -1,0 +1,48 @@
+.root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  main {
+    padding: 0 4rem;
+  }
+
+  form {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  p {
+    color: var(--text-muted);
+  }
+
+  .disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .register {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+
+  .register a {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .error {
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  form > a {
+    color: var(--primary-color);
+    font-weight: 600;
+    width: max-content;
+  }
+}

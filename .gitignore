@@ -1,0 +1,45 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Java / Spring Boot
+.gradle/
+build/
+out/
+*.class
+*.jar
+*.war
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS
+*.swp
+*.swo
+
+# Uploads / Temp
+uploads/
+tmp/
+temp/
+
+# Database
+*.db
+*.sqlite
+
+# Secrets
+application-secret.properties

@@ -1,0 +1,133 @@
+.root {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgb(212 175 55 / 12%);
+  background: rgb(10 10 10 / 88%);
+  backdrop-filter: blur(14px);
+}
+
+.container {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  min-height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoMark {
+  width: 2.15rem;
+  height: 2.15rem;
+}
+
+.logoText {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f6e6a7;
+  letter-spacing: 0.03em;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navigation li > a {
+  min-width: 5rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.2rem;
+  color: var(--text-muted);
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.9rem;
+  position: relative;
+}
+
+.navigation li > a:hover,
+.navigation li > a.active,
+.active {
+  color: var(--primary-color);
+  background: rgb(212 175 55 / 9%);
+}
+
+.navigation li > a svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.navigation li > a span {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.9rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  background: linear-gradient(135deg, #d4af37, #f3dc87);
+  color: #090909;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .navigation {
+    position: absolute;
+    right: 1rem;
+    top: calc(100% + 0.5rem);
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 14rem;
+    padding: 0.8rem;
+    background: #111111;
+    border: 1px solid rgb(212 175 55 / 18%);
+    border-radius: 1rem;
+    box-shadow: 0 24px 40px rgb(0 0 0 / 32%);
+  }
+
+  .navigation li > a {
+    justify-items: start;
+    grid-template-columns: auto 1fr;
+    display: grid;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    justify-content: center;
+    min-height: 2.6rem;
+    padding: 0 0.9rem;
+    border-radius: 0.8rem;
+    color: var(--primary-color);
+    border: 1px solid rgb(212 175 55 / 18%);
+  }
+}

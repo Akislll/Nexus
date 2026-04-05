@@ -1,0 +1,72 @@
+.root {
+  position: relative;
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    border-left: 1px solid rgb(212 175 55 / 14%);
+    padding-left: 1rem;
+
+    .avatar {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: 1px solid rgb(212 175 55 / 20%);
+    }
+  }
+
+  .name {
+    color: #f9f6ea;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  .menu {
+    background-color: #111111;
+    border: 1px solid rgb(212 175 55 / 18%);
+    padding: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
+    position: absolute;
+    top: 4.3rem;
+    right: 0;
+    width: min(18rem, 100vw - 2rem);
+    box-shadow: 0 24px 40px rgb(0 0 0 / 32%);
+
+    .name {
+      font-weight: 700;
+      text-wrap: nowrap;
+    }
+
+    .title {
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+      font-size: 0.84rem;
+    }
+
+    .content {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 3rem 1fr;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .avatar {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid rgb(212 175 55 / 18%);
+    }
+
+    .links {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.root {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0 0 0 / 50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 9999;
+
+  .modal {
+    background: rgba(18, 18, 18, 0.96);
+    border-radius: 0.3rem;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    max-width: 45rem;
+    margin: 4.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  button.close,
+  button.cancel {
+    background-color: #ececec;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  button.cancel {
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .preview {
+    position: relative;
+
+    img {
+      width: 100%;
+      max-height: 12rem;
+    }
+
+    button.cancel {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      z-index: 1;
+      display: none;
+    }
+
+    &:hover button.cancel {
+      display: grid;
+    }
+  }
+
+  .error {
+    color: red;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  textarea {
+  width: 100%;
+  min-height: 10rem;
+
+  background: #0f0f0f;        /* dark background */
+  color: #f5f5f5;             /* visible text */
+
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 1rem;
+
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: #7f7f88;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
+}
+input[type="file"] {
+  color: #d9d9df;
+}
+}

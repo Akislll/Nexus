@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #d4af37;
+  --primary-color-dark: #b8921f;
+  --accent-color: #f3dc87;
+  --surface-color: rgba(18, 18, 18, 0.92);
+  --surface-soft: rgba(24, 24, 24, 0.9);
+  --page-background:
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.12), transparent 30%),
+    linear-gradient(180deg, #111111 0%, #090909 55%, #050505 100%);
+  --border-color: rgba(212, 175, 55, 0.18);
+  --text-primary: #f5f5f5;
+  --text-muted: #b7b7bf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+html {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--page-background);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+button,
+a {
+  transition: 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  font-weight: 600;
+}

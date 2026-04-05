@@ -1,0 +1,29 @@
+.root {
+  width: 100%;
+
+  form {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .description {
+    color: var(--text-muted);
+    line-height: 1.5;
+    max-width: 58rem;
+  }
+
+  .error {
+    color: #ff6b6b;
+    font-size: 0.92rem;
+    margin-top: -0.25rem;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+  }
+}
