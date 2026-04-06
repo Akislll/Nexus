@@ -12,13 +12,7 @@ build/
 .vite/
 *.tsbuildinfo
 
-# Java / Spring Boot
-.gradle/
-build/
-out/
-*.class
-*.jar
-*.war
+
 
 # IDE
 .vscode/

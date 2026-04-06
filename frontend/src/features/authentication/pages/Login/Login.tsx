@@ -16,7 +16,11 @@ export function Login() {
   const { login } = useAuthentication();
   const location = useLocation();
   const navigate = useNavigate();
+<<<<<<< HEAD
   const { isOauthInProgress } = useOauth("login");
+=======
+  const { isOauthInProgress} = useOauth("login");
+>>>>>>> 356b00d (Add Gradle wrapper files)
   usePageTitle("Sign in");
 
   const doLogin = async (e: FormEvent<HTMLFormElement>) => {
